@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="ZombieDefense" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/ZombieDefense" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="../Libraries/SDAA/include" />
+					<Add directory="../Libraries/SDAA" />
+					<Add directory="../Libraries/SDAA/include/SFML_Shape" />
+					<Add directory="include" />
+					<Add directory="include/Drawable" />
+					<Add directory="include/LoadingScreen" />
+					<Add directory="include/RessourcesHolder" />
+				</Compiler>
+				<Linker>
+					<Add library="sfml-graphics" />
+					<Add library="sfml-window" />
+					<Add library="sfml-system" />
+					<Add library="../Libraries/SDAA/bin/Debug/libSDAA.a" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/ZombieDefense" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+					<Add directory="include/Drawable" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="sfml-graphics" />
+					<Add library="sfml-window" />
+					<Add library="sfml-system" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="cb.bmp" />
+		<Unit filename="include/Drawable/Bullets.h" />
+		<Unit filename="include/Drawable/Character.h" />
+		<Unit filename="include/Drawable/GameRender.h" />
+		<Unit filename="include/Drawable/PlayerChar.h" />
+		<Unit filename="include/Drawable/TileMap.h" />
+		<Unit filename="include/Drawable/Zombie.h" />
+		<Unit filename="include/GameEngine.h" />
+		<Unit filename="include/LoadingScreen/LoadingScreen.h" />
+		<Unit filename="include/RessourcesHolder/TextureHolder.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/Drawable/Bullets.cpp" />
+		<Unit filename="src/Drawable/Character.cpp" />
+		<Unit filename="src/Drawable/GameRender.cpp" />
+		<Unit filename="src/Drawable/PlayerChar.cpp" />
+		<Unit filename="src/Drawable/TileMap.cpp" />
+		<Unit filename="src/Drawable/Zombie.cpp" />
+		<Unit filename="src/GameEgine/GameEngine.cpp" />
+		<Unit filename="src/LoadingScreen/LoadingScreen.cpp" />
+		<Unit filename="src/RessoucesHolder/TextureHolder.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
